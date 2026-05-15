@@ -1,0 +1,5 @@
+1. Font Property
+2. Border Property
+3. Float Property
+4. Position Property
+5. Sticky
