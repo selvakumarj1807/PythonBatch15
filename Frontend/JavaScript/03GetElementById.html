@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form onsubmit="addTwoNum(); return false;">
+        <input type="text" name="txt1" id="id01" value="10" placeholder="Enter first number">
+        <input type="text" name="txt2" id="id02" value="20" placeholder="Enter second number">
+
+        <button type="submit">Add Two Numbers</button>
+    </form>
+
+
+    <script>
+        function addTwoNum() {
+            a = document.getElementById("id01").value;
+
+            b = document.getElementById("id02").value;
+
+            v1 = parseInt(a);
+            v2 = parseInt(b);
+
+            sum = v1 + v2;
+
+            console.log("The Sum is : " + sum);
+
+            console.log(v1 + " + " + v2 + " = " + sum);
+        }
+    </script>
+
+</body>
+
+</html>
