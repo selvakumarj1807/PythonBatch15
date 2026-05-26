@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The given Value is Positive or Negative or Zero</h1>
+
+    <input type="number" id="num" placeholder="Enter a number">
+
+    <br><br>
+
+    <button onclick="checkNumber()">Check</button>
+
+    <br><br>
+
+    <input type="text" id="result" readonly>
+
+    <h1 id="tagResult">The Number is: </h1>
+ 
+    <script>
+        function checkNumber() {
+            num = document.getElementById("num").value;
+            result = document.getElementById("result");
+
+            tagResult = document.getElementById("tagResult");
+
+            if (num > 0) {
+                result.value = "The number is Positive";
+                tagResult.innerHTML = "The given Number is: Positive";
+            } else if (num < 0) {
+                result.value = "The number is Negative";
+                tagResult.innerHTML = "The given Number is: Negative";
+            } else {
+                result.value = "The number is Zero";
+                tagResult.innerHTML = "The given Number is: Zero";
+            }
+        }
+    </script>
+</body>
+</html>
