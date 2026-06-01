@@ -40,9 +40,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 5. Create a Django Project (in current directory):
    ------------------------------------------------
-   django-admin startproject projectName
-   
-   cd projectName
+   django-admin startproject projectName .
 
 6. Create a Django App:
    ---------------------
@@ -58,6 +56,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
        ]
 
 8. Add Html Files
+-----------------
 app/templates/index.html
 ------------------------
 
