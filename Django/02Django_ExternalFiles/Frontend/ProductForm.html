@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="external/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-section">
+            <img src="external/images/logo.jpg" alt="Logo">
+            <h2>Product Management</h2>
+        </div>
+
+        <ul>
+            <li><a href="ProductForm.html">Product Form</a></li>
+            <li><a href="ProductTable.html">Product Table</a></li>
+        </ul>
+    </nav>
+
+    <!-- Form Section -->
+    <div class="container">
+
+        <h1>Add Product</h1>
+
+        <img src="external/images/product.jpg" alt="Product Image" class="product-image">
+
+        <form id="productForm">
+
+            <label>Product ID</label>
+            <input type="text" id="productId" required>
+
+            <label>Product Name</label>
+            <input type="text" id="productName" required>
+
+            <label>Category</label>
+            <select id="category">
+                <option>Electronics</option>
+                <option>Clothing</option>
+                <option>Furniture</option>
+                <option>Books</option>
+            </select>
+
+            <label>Price</label>
+            <input type="number" id="price" required>
+
+            <label>Quantity</label>
+            <input type="number" id="quantity" required>
+
+            <button type="submit">Save Product</button>
+
+        </form>
+
+    </div>
+
+    <script src="external/js/script.js"></script>
+</body>
+
+</html>
