@@ -1,0 +1,153 @@
+{
+  "info": {
+    "_postman_id": "c3c38bd2-3d0a-47c9-a2c2-89de1d70e464",
+    "name": "SMS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55937560",
+    "_collection_link": "https://go.postman.co/collection/55937560-c3c38bd2-3d0a-47c9-a2c2-89de1d70e464?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Students",
+      "item": [
+        {
+          "name": "Create Data",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Rahul\",\r\n    \"email\": \"rahul@gail.com\",\r\n    \"course\": \"Science\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/students/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "students",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Data",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Rahul\",\r\n    \"email\": \"rahul@gail.com\",\r\n    \"course\": \"Science\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/students/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "students",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_by_Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Rahul\",\r\n    \"email\": \"rahul@gail.com\",\r\n    \"course\": \"Science\"\r\n}"
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/students/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "students",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_Data",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Ravi\",\r\n    \"email\": \"ravi@gail.com\",\r\n    \"course\": \"Science\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:8000/api/students/1/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "students",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete_Data",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
